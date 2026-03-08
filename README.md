@@ -15,4 +15,5 @@ Ten projekt został zaplanowany z myślą o usługach PaaS (Platform as a Servic
 * [x] **Artefakt 1:** Zaplanowano strukturę folderów i diagram C4 (dostępny w `/docs`).
 * [x] **Artefakt 2:** Konfiguracja środowiska Docker (w trakcie...).
 * [x] **Artefakt 3:** Działająca warstwa prezentacji (React + Vite)
+* [x] **Artefakt 4:** Działająca warstwa serwerowa + działające API Swaggera
 > **Informacja:** Ten plik będzie ewoluował. W kolejnych etapach dodamy tutaj sekcje 'Quick Start', opis zmiennych środowiskowych oraz instrukcję wdrożenia (CI/CD).

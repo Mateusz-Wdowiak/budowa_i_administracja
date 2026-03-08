@@ -1,5 +1,13 @@
-FROM alpine
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+WORKDIR /src
+COPY . .
+RUN dotnet restore
+RUN dotnet publish -c Release -o /app/publish
 
-RUN apk add --no-cache curl
 
-CMD ["sh", "-c", "echo 'Backend service is running...' && sleep infinity"]
+FROM mcr.microsoft.com/dotnet/aspnet:9.0
+WORKDIR /app
+COPY --from=build /app/publish .
+EXPOSE 80
+# Nazwa pliku.dllmusiodpowiadaćnazwieTwojegoprojektu
+ENTRYPOINT ["dotnet", "CloudBackend.dll"]
