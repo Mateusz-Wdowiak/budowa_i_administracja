@@ -17,4 +17,5 @@ Ten projekt został zaplanowany z myślą o usługach PaaS (Platform as a Servic
 * [x] **Artefakt 3:** Działająca warstwa prezentacji (React + Vite)
 * [x] **Artefakt 4:** Działająca warstwa serwerowa + działające API Swaggera
 * [x] **Artefakt 5:** System gotowy na chmurę
+* [x] **Artefakt 6:** Backend i frontend działający z Azure
 > **Informacja:** Ten plik będzie ewoluował. W kolejnych etapach dodamy tutaj sekcje 'Quick Start', opis zmiennych środowiskowych oraz instrukcję wdrożenia (CI/CD).
