@@ -21,7 +21,7 @@ jobs:
           npm run build
         working-directory: ./frontend
         env:
-          VITE_API_URL: "Tu wstaw adres swojego backendu np. https://cloud-task-manager-api-h9fsfpd4gnaeaddz.germanywestcentral-01.azurewebsites.net/api"
+          VITE_API_URL: "https://cloud-task-manager-api-96590-f9h0c4fybue6eydj.polandcentral-01.azurewebsites.net/api"
 
       - name: Upload
         uses: actions/upload-artifact@v4
@@ -45,9 +45,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_TuWstawTwojeAzureADAppClientID }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_TuWstawTwojeAzureADAppTenantID }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_TuWstawTwojeAzureSubscriptionID }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_424891B036D94028A0214A1AC339F728 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_214541F2A67543C0A8B068AF7F358F04 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_F90702B8723F4CEB83B1FBAE424D3C9F }}
 
       - name: Deploy
         uses: azure/webapps-deploy@v3
